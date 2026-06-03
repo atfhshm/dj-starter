@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Django Starter{% endblock %}</title>
+    {% block meta %}{% endblock %}
+    {% block extra_head %}{% endblock %}
+    {% block css %}{% endblock %}
+</head>
+<body{% block body_class %}{% endblock %}>
+    {% block body %}
+    <header>
+        {% block header %}
+        <nav>
+            {% block nav %}{% endblock %}
+        </nav>
+        {% endblock %}
+    </header>
+
+    <main>
+        {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        {% block footer %}{% endblock %}
+    </footer>
+    {% endblock %}
+
+    {% block js %}
+    <script src="{% static 'app.js' %}" defer></script>
+    {% endblock %}
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

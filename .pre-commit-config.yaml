@@ -1,0 +1,57 @@
+# Pre-commit hooks for dj-starter.
+#
+# Setup (uses uv):
+#   uv run pre-commit install
+#
+# Run against all files manually:
+#   uv run pre-commit run --all-files
+#
+# ruff and ty run as local `uv run` hooks so they always use the exact
+# versions pinned in uv.lock — no drift between pre-commit and the project env.
+
+default_install_hook_types: [pre-commit]
+fail_fast: false
+
+repos:
+  # Generic file hygiene.
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: trailing-whitespace
+        args: [--markdown-linebreak-ext=md]
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-toml
+      - id: check-json
+      - id: check-added-large-files
+        args: [--maxkb=1024]
+      - id: check-merge-conflict
+      - id: check-case-conflict
+      - id: detect-private-key
+      - id: mixed-line-ending
+        args: [--fix=lf]
+
+  # Lint, format, and type-check via the project's own pinned tools.
+  - repo: local
+    hooks:
+      - id: ruff-check
+        name: ruff check
+        entry: uv run ruff check --fix
+        language: system
+        types_or: [python, pyi]
+        require_serial: true
+
+      - id: ruff-format
+        name: ruff format
+        entry: uv run ruff format
+        language: system
+        types_or: [python, pyi]
+        require_serial: true
+
+      - id: ty
+        name: ty check
+        entry: uv run ty check
+        language: system
+        types_or: [python, pyi]
+        pass_filenames: false
+        require_serial: true

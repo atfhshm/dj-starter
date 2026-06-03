@@ -1,0 +1,310 @@
+# Arabic translation for the dj-starter project.
+# Copyright (C) 2026 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: dj-starter\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-08 05:44+0300\n"
+"PO-Revision-Date: 2026-06-06 15:24+0000\n"
+"Last-Translator: \n"
+"Language-Team: Arabic\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: core/exceptions/exceptions.py:32
+msgid "An unexpected error occurred."
+msgstr "حدث خطأ غير متوقع."
+
+#: core/exceptions/exceptions.py:52
+msgid "Invalid request."
+msgstr "طلب غير صالح."
+
+#: core/exceptions/exceptions.py:58
+msgid "Authentication credentials were not provided."
+msgstr "لم يتم تقديم بيانات اعتماد المصادقة."
+
+#: core/exceptions/exceptions.py:64
+msgid "You do not have permission to perform this action."
+msgstr "ليس لديك إذن لتنفيذ هذا الإجراء."
+
+#: core/exceptions/exceptions.py:70
+msgid "Not found."
+msgstr "غير موجود."
+
+#: core/exceptions/exceptions.py:76
+msgid "Conflict."
+msgstr "تعارض."
+
+#: core/mixin.py:11
+msgid "created at"
+msgstr "تاريخ الإنشاء"
+
+#: core/mixin.py:12
+msgid "The date and time the record was created."
+msgstr "تاريخ ووقت إنشاء السجل."
+
+#: core/mixin.py:25 user/models.py:273
+msgid "updated at"
+msgstr "تاريخ التحديث"
+
+#: core/mixin.py:26
+msgid "The date and time the record was updated."
+msgstr "تاريخ ووقت تحديث السجل."
+
+#: user/apps.py:7
+msgid "User"
+msgstr "مستخدم"
+
+#: user/apps.py:8
+msgid "Users"
+msgstr "المستخدمون"
+
+#: user/models.py:39
+msgid "The Name field must be set"
+msgstr "يجب تعيين حقل الاسم"
+
+#: user/models.py:41
+msgid "The Email field must be set"
+msgstr "يجب تعيين حقل البريد الإلكتروني"
+
+#: user/models.py:43
+msgid "The Phone Number field must be set"
+msgstr "يجب تعيين حقل رقم الهاتف"
+
+#: user/models.py:69
+msgid "Superuser must have is_staff=True."
+msgstr "يجب أن يكون المستخدم المتميّز is_staff=True."
+
+#: user/models.py:71
+msgid "Superuser must have is_superuser=True."
+msgstr "يجب أن يكون المستخدم المتميّز is_superuser=True."
+
+#: user/models.py:113
+msgid "Credentials"
+msgstr "بيانات الاعتماد"
+
+#: user/models.py:114
+msgid "Magic Link"
+msgstr "رابط سحري"
+
+#: user/models.py:115
+msgid "Google"
+msgstr "جوجل"
+
+#: user/models.py:116
+msgid "Apple"
+msgstr "آبل"
+
+#: user/models.py:121
+msgid "English"
+msgstr "الإنجليزية"
+
+#: user/models.py:122
+msgid "Arabic"
+msgstr "العربية"
+
+#: user/models.py:126
+msgid "name"
+msgstr "الاسم"
+
+#: user/models.py:128
+msgid "The full name of the user."
+msgstr "الاسم الكامل للمستخدم."
+
+#: user/models.py:131
+msgid "email"
+msgstr "البريد الإلكتروني"
+
+#: user/models.py:134
+msgid "The email address of the user."
+msgstr "عنوان البريد الإلكتروني للمستخدم."
+
+#: user/models.py:136
+msgid "A user with that email already exists."
+msgstr "يوجد بالفعل مستخدم بهذا البريد الإلكتروني."
+
+#: user/models.py:140
+msgid "email verified"
+msgstr "البريد الإلكتروني مُتحقَّق منه"
+
+#: user/models.py:142
+msgid "Designates whether the user's email is verified."
+msgstr "يحدد ما إذا كان البريد الإلكتروني للمستخدم مُتحقَّقًا منه."
+
+#: user/models.py:145
+msgid "phone number"
+msgstr "رقم الهاتف"
+
+#: user/models.py:150
+msgid "The phone number of the user."
+msgstr "رقم هاتف المستخدم."
+
+#: user/models.py:152
+msgid "A user with that phone number already exists."
+msgstr "يوجد بالفعل مستخدم بهذا رقم الهاتف."
+
+#: user/models.py:156
+msgid "phone number verified"
+msgstr "رقم الهاتف مُتحقَّق منه"
+
+#: user/models.py:158
+msgid "Designates whether the user's phone number is verified."
+msgstr "يحدد ما إذا كان رقم هاتف المستخدم مُتحقَّقًا منه."
+
+#: user/models.py:161
+msgid "avatar"
+msgstr "الصورة الرمزية"
+
+#: user/models.py:162
+msgid "The avatar of the user."
+msgstr "الصورة الرمزية للمستخدم."
+
+#: user/models.py:170
+msgid "country"
+msgstr "الدولة"
+
+#: user/models.py:171
+msgid "The country of the user."
+msgstr "دولة المستخدم."
+
+#: user/models.py:176
+msgid "locale"
+msgstr "اللغة المحلية"
+
+#: user/models.py:178
+msgid "The locale of the user."
+msgstr "اللغة المحلية للمستخدم."
+
+#: user/models.py:183
+msgid "timezone"
+msgstr "المنطقة الزمنية"
+
+#: user/models.py:184
+msgid "The timezone of the user."
+msgstr "المنطقة الزمنية للمستخدم."
+
+#: user/models.py:191
+msgid "staff status"
+msgstr "حالة الموظف"
+
+#: user/models.py:193
+msgid "Designates whether the user can log into this admin site."
+msgstr "يحدد ما إذا كان المستخدم يستطيع تسجيل الدخول إلى موقع الإدارة هذا."
+
+#: user/models.py:196
+msgid "active"
+msgstr "نشط"
+
+#: user/models.py:199
+msgid ""
+"Designates whether this user should be treated as active. Unselect this "
+"instead of deleting accounts."
+msgstr ""
+"يحدد ما إذا كان يجب اعتبار هذا المستخدم نشطًا. ألغِ تحديد هذا الخيار بدلاً من "
+"حذف الحسابات."
+
+#: user/models.py:206
+msgid "banned"
+msgstr "محظور"
+
+#: user/models.py:208
+msgid "Designates whether the user is banned."
+msgstr "يحدد ما إذا كان المستخدم محظورًا."
+
+#: user/models.py:211
+msgid "banned reason"
+msgstr "سبب الحظر"
+
+#: user/models.py:212
+msgid "The reason the user was banned."
+msgstr "سبب حظر المستخدم."
+
+#: user/models.py:217
+msgid "banned at"
+msgstr "تاريخ الحظر"
+
+#: user/models.py:218
+msgid "The date and time the user was banned."
+msgstr "تاريخ ووقت حظر المستخدم."
+
+#: user/models.py:223
+msgid "banned until"
+msgstr "محظور حتى"
+
+#: user/models.py:224
+msgid "The date and time the user will be unbanned."
+msgstr "تاريخ ووقت إلغاء حظر المستخدم."
+
+#: user/models.py:230
+msgid "two factor enabled"
+msgstr "المصادقة الثنائية مُفعَّلة"
+
+#: user/models.py:232
+msgid "Designates whether the user has two factor authentication enabled."
+msgstr "يحدد ما إذا كان المستخدم قد فعّل المصادقة الثنائية."
+
+#: user/models.py:235
+msgid "last login at"
+msgstr "آخر تسجيل دخول"
+
+#: user/models.py:236
+msgid "The date and time the user last logged in."
+msgstr "تاريخ ووقت آخر تسجيل دخول للمستخدم."
+
+#: user/models.py:242
+msgid "last login ip"
+msgstr "عنوان آخر تسجيل دخول"
+
+#: user/models.py:243
+msgid "The IP address the user last logged in from."
+msgstr "العنوان الذي سجّل المستخدم الدخول منه آخر مرة."
+
+#: user/models.py:249
+msgid "last logout at"
+msgstr "آخر تسجيل خروج"
+
+#: user/models.py:250
+msgid "The date and time the user last logged out."
+msgstr "تاريخ ووقت آخر تسجيل خروج للمستخدم."
+
+#: user/models.py:256
+msgid "last logout ip"
+msgstr "عنوان آخر تسجيل خروج"
+
+#: user/models.py:257
+msgid "The IP address the user last logged out from."
+msgstr "العنوان الذي سجّل المستخدم الخروج منه آخر مرة."
+
+#: user/models.py:263
+msgid "last login method"
+msgstr "طريقة آخر تسجيل دخول"
+
+#: user/models.py:266
+msgid "The method the user last logged in with."
+msgstr "الطريقة التي سجّل بها المستخدم الدخول آخر مرة."
+
+#: user/models.py:275
+msgid "The date and time the user was last updated."
+msgstr "تاريخ ووقت آخر تحديث للمستخدم."
+
+#: user/models.py:278
+msgid "date joined"
+msgstr "تاريخ الانضمام"
+
+#: user/models.py:279
+msgid "The date and time the user joined the platform."
+msgstr "تاريخ ووقت انضمام المستخدم إلى المنصة."
+
+#: user/models.py:289
+msgid "user"
+msgstr "مستخدم"
+
+#: user/models.py:290
+msgid "users"
+msgstr "المستخدمون"
